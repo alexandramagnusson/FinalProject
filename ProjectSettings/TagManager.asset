@@ -13,7 +13,7 @@ TagManager:
   - UI
   - Background
   - Player
-  - 
+  - Tilemap
   - 
   - 
   - 
@@ -46,4 +46,7 @@ TagManager:
     locked: 0
   - name: player
     uniqueID: 1150576793
+    locked: 0
+  - name: Tilemap
+    uniqueID: 954331867
     locked: 0
