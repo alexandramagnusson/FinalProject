@@ -6,6 +6,7 @@ TagManager:
   tags:
   - FallingSpawner
   - FallingSpawn
+  - PickupObject
   layers:
   - Default
   - TransparentFX
@@ -17,7 +18,7 @@ TagManager:
   - Enemy
   - Trap
   - MovingPlatform
-  - 
+  - ObjectPickup
   - 
   - 
   - 
