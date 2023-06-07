@@ -52,11 +52,11 @@ public class EnemyController2D : Controller2D
     {
         if(Mathf.Abs(impactDirection.x) > Mathf.Abs(impactDirection.y)) {
             direction = (int)Mathf.Sign(-impactDirection.x);
-        } else {
+        } /*else {
             if(impactDirection.y > 0.0f) {
-                Destroy(gameObject);
+                direction = (int)Mathf.Sign(-impactDirection.x);
+                //Destroy(gameObject);
             }
-        }
-
+        }*/
     }
 }
