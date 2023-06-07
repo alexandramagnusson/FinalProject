@@ -12,4 +12,15 @@ public class Falling : MonoBehaviour
     {
         transform.Translate(Vector3.down * fallSpeed * Time.deltaTime);
     }
+
+    void OnTriggerStay2D(Collider2D other)
+    {
+        PlatformerController2D pController = other.gameObject.GetComponent<PlatformerController2D>();
+        if (pController != null)
+        {
+            pController.TakeDamage();
+            return;
+        }
+    }
+
 }
