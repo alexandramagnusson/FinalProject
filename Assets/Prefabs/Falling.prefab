@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 1291480624647506483}
   - component: {fileID: 1995293938239105668}
   - component: {fileID: -2209915498703493535}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Falling
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -71,8 +71,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: 954331867
+  m_SortingLayer: 3
   m_SortingOrder: 0
   m_Sprite: {fileID: -1937000941, guid: b57b482f125864441855331eaf171edb, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}

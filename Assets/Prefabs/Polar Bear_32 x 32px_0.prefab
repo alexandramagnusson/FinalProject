@@ -154,16 +154,16 @@ MonoBehaviour:
   grounded: 1
   groundLayers:
     serializedVersion: 2
-    m_Bits: 769
+    m_Bits: 833
   groundRayLength: 0.1
   groundRaySpread: 0.1
   relativeVelocity: {x: 0, y: 0}
   jumpforce: 8
   lives: 5
-  jumpsound: {fileID: 0}
-  hitsound: {fileID: 0}
+  jumpsound: {fileID: 8300000, guid: bead7c119606b4be9a8b134009bc8e9b, type: 3}
+  hitsound: {fileID: 8300000, guid: 9b68469373bbe45feba455444039086e, type: 3}
   coinsound: {fileID: 8300000, guid: ecc98bc90e4cd407d9f48716d40f85d4, type: 3}
-  killsound: {fileID: 0}
+  killsound: {fileID: 8300000, guid: 207a722007f4a4acb9a6f7810ea44387, type: 3}
 --- !u!114 &8374674063728451150
 MonoBehaviour:
   m_ObjectHideFlags: 0
