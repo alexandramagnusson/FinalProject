@@ -11,10 +11,10 @@ GameObject:
   - component: {fileID: 8276976681818923018}
   - component: {fileID: 8276976681818923017}
   - component: {fileID: 8276976681818923020}
-  - component: {fileID: 8276976681818923019}
+  - component: {fileID: 6903973973939659518}
   m_Layer: 6
   m_Name: Rock Pickup
-  m_TagString: Untagged
+  m_TagString: PickupObject
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -96,7 +96,7 @@ PolygonCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -116,15 +116,24 @@ PolygonCollider2D:
       - {x: -0.4, y: 0}
       - {x: 0.4, y: 0}
       - {x: 0.4, y: 0.65000004}
---- !u!114 &8276976681818923019
-MonoBehaviour:
+--- !u!50 &6903973973939659518
+Rigidbody2D:
+  serializedVersion: 4
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8276976681818923016}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 59a99cb3cc799494cad3a78f0a75762d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 4
