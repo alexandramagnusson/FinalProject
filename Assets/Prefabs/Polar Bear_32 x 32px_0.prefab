@@ -162,7 +162,7 @@ MonoBehaviour:
   lives: 5
   jumpsound: {fileID: 0}
   hitsound: {fileID: 0}
-  coinsound: {fileID: 0}
+  coinsound: {fileID: 8300000, guid: ecc98bc90e4cd407d9f48716d40f85d4, type: 3}
   killsound: {fileID: 0}
 --- !u!114 &8374674063728451150
 MonoBehaviour:
