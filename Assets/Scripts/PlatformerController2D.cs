@@ -70,7 +70,7 @@ public class PlatformerController2D : Controller2D
         }
         audioSource.PlayOneShot(hitsound);
         lives--;
-        //HeartsUI.RemoveHeart();
+        HeartsUI.RemoveHeart();
         if(lives <= 0) {
             SceneManager.LoadScene(SceneManager.GetActiveScene().name);
         }
