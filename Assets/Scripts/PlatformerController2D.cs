@@ -42,6 +42,7 @@ public class PlatformerController2D : Controller2D
         if (inputJump && grounded) {
             audioSource.PlayOneShot(jumpsound);
             vel.y = jumpforce;
+            Debug.Log("jump");
             relativeVelocity.y = vel.y;
         }
         rb2d.velocity = vel;
@@ -69,7 +70,7 @@ public class PlatformerController2D : Controller2D
         }
         audioSource.PlayOneShot(hitsound);
         lives--;
-        HeartsUI.RemoveHeart();
+       // HeartsUI.RemoveHeart();
         if(lives <= 0) {
             SceneManager.LoadScene(SceneManager.GetActiveScene().name);
         }
