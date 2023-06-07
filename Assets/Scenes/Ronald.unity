@@ -199,13 +199,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 482520379}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.0012, y: 0.0075, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0.0012, y: 0.0075, z: 10}
   m_LocalScale: {x: 5.6403804, y: 5.710103, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 1
+  m_Father: {fileID: 1004310973}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &741683172
 GameObject:
@@ -217,7 +217,7 @@ GameObject:
   m_Component:
   - component: {fileID: 741683174}
   - component: {fileID: 741683173}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: Grid
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -250,7 +250,7 @@ Transform:
   m_Children:
   - {fileID: 985489224}
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &985489223
 GameObject:
@@ -264,7 +264,7 @@ GameObject:
   - component: {fileID: 985489227}
   - component: {fileID: 985489226}
   - component: {fileID: 985489225}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: Tilemap
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -340,8 +340,8 @@ TilemapRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 1150576793
-  m_SortingLayer: 2
+  m_SortingLayerID: 954331867
+  m_SortingLayer: 3
   m_SortingOrder: 0
   m_ChunkSize: {x: 32, y: 32, z: 32}
   m_ChunkCullingBounds: {x: 0.5666667, y: 0, z: 0}
@@ -753,7 +753,8 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 482520381}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -782,7 +783,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7940814274215325152, guid: 424c926b434804c35ad7554db3865e06, type: 3}
       propertyPath: m_RootOrder
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7940814274215325152, guid: 424c926b434804c35ad7554db3865e06, type: 3}
       propertyPath: m_LocalPosition.x
@@ -847,9 +848,9 @@ MonoBehaviour:
   grounded: 0
   groundLayers:
     serializedVersion: 2
-    m_Bits: 128
+    m_Bits: 1
   groundRayLength: 0.1
-  groundRaySpread: 0.1
+  groundRaySpread: 0.4
   relativeVelocity: {x: 0, y: 0}
   jumpforce: 12
   lives: 5
@@ -874,7 +875,7 @@ PolygonCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.6666667, y: 1.0666667}
+    oldSize: {x: 0.73333335, y: 1}
     newSize: {x: 0.6666667, y: 1.0666667}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -902,9 +903,9 @@ Rigidbody2D:
   m_Mass: 1
   m_LinearDrag: 0
   m_AngularDrag: 0.05
-  m_GravityScale: 1
+  m_GravityScale: 2
   m_Material: {fileID: 6200000, guid: e0ecf7d40ac5cba4e8203859fb22b4c3, type: 2}
-  m_Interpolate: 0
+  m_Interpolate: 1
   m_SleepingMode: 1
-  m_CollisionDetection: 0
-  m_Constraints: 0
+  m_CollisionDetection: 1
+  m_Constraints: 4
