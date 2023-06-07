@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: -5013916280213939082}
   - component: {fileID: 4808512472932641710}
   - component: {fileID: 8374674063728451150}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Polar Bear_32 x 32px_0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -74,8 +74,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: 1150576793
+  m_SortingLayer: 2
   m_SortingOrder: 0
   m_Sprite: {fileID: 1600128485, guid: dace8af4e24f8304cba11df9cacc758a, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -158,7 +158,7 @@ MonoBehaviour:
   groundRayLength: 0.1
   groundRaySpread: 0.1
   relativeVelocity: {x: 0, y: 0}
-  jumpforce: 12
+  jumpforce: 8
   lives: 5
   jumpsound: {fileID: 0}
   hitsound: {fileID: 0}
