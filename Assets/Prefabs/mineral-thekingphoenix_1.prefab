@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 6501169867164435585}
   - component: {fileID: 8561645680006743203}
   - component: {fileID: -1139302269320876010}
-  m_Layer: 8
+  m_Layer: 7
   m_Name: mineral-thekingphoenix_1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
