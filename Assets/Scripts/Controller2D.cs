@@ -57,12 +57,21 @@ public abstract class Controller2D : MonoBehaviour
 
     private void OnCollisionStay2D(Collision2D collision)
     {
-        Controller2D controller = collision.gameObject.GetComponent<Controller2D>();
-        if(controller != null) {
-            Vector3 impactDirection = collision.gameObject.transform.position - transform.position;
-            Hurt(impactDirection);
-        }
+     Controller2D controller = collision.gameObject.GetComponent<Controller2D>();
+     if(controller != null) {
+         Vector3 impactDirection = collision.gameObject.transform.position - transform.position;
+         if (collision.gameObject.name.Contains("Turbine"))
+         {
+             Heal(impactDirection);
+         }
+         else
+         {
+             Hurt(impactDirection);
+         }
+     }
     }
 
     protected abstract void Hurt(Vector3 impactDirection);
+    public abstract void Heal(Vector3 impactDirection);
+
 }

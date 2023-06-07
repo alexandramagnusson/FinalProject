@@ -54,4 +54,16 @@ public class HeartsUI : MonoBehaviour
             hearts[heartsVisible].enabled = false;
         }
     }
+        public static void AddHeart()
+        {
+            instance._AddHeart();
+        }
+
+                private void _AddHeart()
+                {
+                    if(heartsVisible < hearts.Length) {
+                        hearts[heartsVisible].enabled = true;
+                        heartsVisible++;
+                     }
+                }
 }

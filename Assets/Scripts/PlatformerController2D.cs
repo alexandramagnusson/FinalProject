@@ -77,6 +77,16 @@ public class PlatformerController2D : Controller2D
         StartCoroutine(Invulnerability(1));
     }
 
+        public override void Heal(Vector3 impactDirection)
+        {
+            if (invulnerable) {
+                return;
+            }
+
+            lives++;
+            HeartsUI.AddHeart();
+        }
+
     public void CollectCoin()
     {
         audioSource.PlayOneShot(coinsound);

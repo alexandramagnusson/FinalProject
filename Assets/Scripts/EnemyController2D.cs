@@ -59,4 +59,9 @@ public class EnemyController2D : Controller2D
             }
         }*/
     }
+
+        public override void Heal(Vector3 impactDirection)
+        {
+            // Healing not used for enemies
+        }
 }
