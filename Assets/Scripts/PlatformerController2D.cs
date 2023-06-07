@@ -94,6 +94,7 @@ public class PlatformerController2D : Controller2D
 
     IEnumerator Invulnerability(float time)
     {
+        Debug.Log("Invulnerable " + Time.time);
         invulnerable = true;
         for(int i = 0; i < time/0.2f; i++) {
             sRenderer.color = Color.red;
