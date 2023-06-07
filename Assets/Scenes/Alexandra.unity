@@ -965,6 +965,28 @@ PolygonCollider2D:
       - {x: 0.23813677, y: 0.38120806}
       - {x: 0.17330447, y: 0.47828048}
       - {x: 0.11346303, y: 0.55}
+--- !u!114 &1285002363
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1285002355}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5c750b89a55990d40922bb888179181f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 0
+  grounded: 0
+  groundLayers:
+    serializedVersion: 2
+    m_Bits: 513
+  groundRayLength: 0.1
+  groundRaySpread: 0.1
+  relativeVelocity: {x: 0, y: 0}
+  ledgeTestLeft: 0
+  ledgeTestRight: 0
 --- !u!1001 &976034827304777031
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -978,6 +1000,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -6196652994908538419, guid: 8d2fde6b2a5d644a7b726aaa018ccebd, type: 3}
       propertyPath: grounded
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -6196652994908538419, guid: 8d2fde6b2a5d644a7b726aaa018ccebd, type: 3}
+      propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -6196652994908538419, guid: 8d2fde6b2a5d644a7b726aaa018ccebd, type: 3}
@@ -1198,4 +1224,5 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 6992034296096128086, guid: 8d2fde6b2a5d644a7b726aaa018ccebd, type: 3}
+    - {fileID: -6196652994908538419, guid: 8d2fde6b2a5d644a7b726aaa018ccebd, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 8d2fde6b2a5d644a7b726aaa018ccebd, type: 3}
