@@ -106,7 +106,7 @@ MonoBehaviour:
   - {fileID: -6481715375851425731, guid: 361e5c96a093f4f33b9b93ec15f72d5b, type: 3}
   - {fileID: -6928565941568363510, guid: 361e5c96a093f4f33b9b93ec15f72d5b, type: 3}
   animationFPS: 5
-  collectAllCoinsToOpen: 1
+  collectAllCoinsToOpen: 0
 --- !u!61 &3152384160257428621
 BoxCollider2D:
   m_ObjectHideFlags: 0
