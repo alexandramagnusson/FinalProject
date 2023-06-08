@@ -18,15 +18,15 @@ public class SliderController : MonoBehaviour
         valueText.text = value.ToString();
     }
 
-    public void updateTemp
+    public void updateTemp()
     {
         temp++; 
-        slider.value = Temp;
+        slider.value = temp;
     }
 
-    public void removeTemp
+    public void removeTemp()
     {
         temp--;
-        slider.value = Temp;
+        slider.value = temp;
     }
 }

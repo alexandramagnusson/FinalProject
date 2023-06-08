@@ -42,7 +42,7 @@ public class PlatformerController2D : Controller2D
         if (inputJump && grounded) {
             audioSource.PlayOneShot(jumpsound);
             vel.y = jumpforce;
-            Debug.Log("jump");
+            //Debug.Log("jump");
             relativeVelocity.y = vel.y;
         }
         rb2d.velocity = vel;
