@@ -87,6 +87,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isClimbing: 0
+  climbsound: {fileID: 8300000, guid: 97dd4dce1cda94b2eb7dc7783294994e, type: 3}
   rb: {fileID: 5271119027191981692}
 --- !u!50 &5271119027191981692 stripped
 Rigidbody2D:

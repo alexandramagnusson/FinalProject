@@ -9,6 +9,7 @@ public class PlayerClimb : MonoBehaviour
     private float speed = 5f;
     private bool isTree;
     public bool isClimbing;
+    public AudioClip climbsound;
 
     [SerializeField] private Rigidbody2D rb;
 
@@ -30,6 +31,7 @@ public class PlayerClimb : MonoBehaviour
         {
             rb.gravityScale = 0f;
             rb.velocity = new Vector2(rb.velocity.x, vertical * speed);
+            AudioSource.PlayClipAtPoint(climbsound, transform.position);
         }
         else
         {
