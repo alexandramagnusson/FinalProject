@@ -12,18 +12,33 @@ EditorBuildSettings:
     path: Assets/Scenes/Clicker.unity
     guid: b605199076ba34b4d9b1190077ee27ef
   - enabled: 1
-    path: Assets/Scenes/Alexandra.unity
-    guid: 2cda990e2423bbf4892e6590ba056729
-  - enabled: 1
     path: Assets/Scenes/Ronald.unity
     guid: 3c4de534475dc4739816c8f3ead7e699
-  - enabled: 1
-    path: Assets/Scenes/Mackenzie.unity
-    guid: 1a018028afd3a4e63a3191f4f1973763
   - enabled: 1
     path: Assets/Scenes/Level 1.unity
     guid: b7a5c5b30108a45c5b24ae755c52d630
   - enabled: 1
+    path: Assets/Scenes/Alexandra.unity
+    guid: 2cda990e2423bbf4892e6590ba056729
+  - enabled: 1
     path: Assets/Scenes/Rocks.unity
     guid: 6a992fe0084c14990b71e22f2e1fdd1a
+  - enabled: 1
+    path: Assets/Scenes/Mackenzie.unity
+    guid: 1a018028afd3a4e63a3191f4f1973763
+  - enabled: 1
+    path: Assets/Scenes/Tree Climb.unity
+    guid: fa7f1307c8ea744f8ab2360b3a8d8edb
+  - enabled: 1
+    path: Assets/Scenes/FInish.unity
+    guid: 9c7c2d4eb4484894bb5d4f8f4e078abb
+  - enabled: 1
+    path: Assets/Scenes/GrizzlyTutorial.unity
+    guid: cb9790105d155fb469725a072cbf8eb8
+  - enabled: 1
+    path: Assets/Scenes/GrizzlyLevelMain.unity
+    guid: d973e67b082c4ea4d9c7eb04dfd839d8
+  - enabled: 1
+    path: Assets/Scenes/GrizzlyEndScreen.unity
+    guid: f63e4510191ecc44da57f279b2a6f1fd
   m_configObjects: {}
