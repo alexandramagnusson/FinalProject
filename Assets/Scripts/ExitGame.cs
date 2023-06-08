@@ -4,17 +4,19 @@ using UnityEngine;
 
 public class ExitGame : MonoBehaviour
 {
-    // Start is called before the first frame update
     void Start()
     {
-        
+        // Start is called before the first frame update
+        // This method is empty, no code execution is present in the Start() method
     }
 
-    // Update is called once per frame
     void Update()
     {
+        // Update is called once per frame
+        // Checks if the player pressed the "Escape" key
         if (Input.GetKeyDown(KeyCode.Escape))
         {
+            // If the "Escape" key is pressed, exit the game
             Application.Quit();
         }
     }

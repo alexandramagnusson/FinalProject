@@ -5,27 +5,25 @@ using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
 
-
 public class SliderController : MonoBehaviour
 {
-    // Start is called before the first frame update
-    public TMP_Text valueText;
-    int temp = 10;
-    public Slider slider; 
+    public TMP_Text valueText; // Reference to the TextMeshProUGUI component displaying the value
+    int temp = 10; // The current value
+    public Slider slider; // Reference to the Slider component
 
     public void AddTemp()
     {
-        temp++; 
-        slider.value = temp;
-        valueText.text = temp.ToString();
-        Debug.Log("AddTemp");
+        temp++; // Increment the value
+        slider.value = temp; // Update the Slider value to match the new value
+        valueText.text = temp.ToString(); // Update the value text display
+        Debug.Log("AddTemp"); // Log a message to the console
     }
 
     public void RemoveTemp()
     {
-        temp--;
-        Debug.Log("RemoveTemp");
-        slider.value = temp;
-        valueText.text = temp.ToString();
+        temp--; // Decrement the value
+        Debug.Log("RemoveTemp"); // Log a message to the console
+        slider.value = temp; // Update the Slider value to match the new value
+        valueText.text = temp.ToString(); // Update the value text display
     }
 }
