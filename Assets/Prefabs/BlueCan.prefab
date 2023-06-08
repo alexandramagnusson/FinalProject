@@ -10,8 +10,8 @@ GameObject:
   m_Component:
   - component: {fileID: 4036515099377135858}
   - component: {fileID: 5720436619503269971}
-  - component: {fileID: 5646016819536006068}
   - component: {fileID: 1696410435035930822}
+  - component: {fileID: 2294587933221593838}
   m_Layer: 0
   m_Name: BlueCan
   m_TagString: Untagged
@@ -86,19 +86,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &5646016819536006068
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8037127898186569117}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ac8c526d32d07d045878843348c12f6e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  animationDuration: 2
 --- !u!60 &1696410435035930822
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -133,3 +120,16 @@ PolygonCollider2D:
       - {x: 0.30625, y: -0.15625}
       - {x: 0.30625, y: 0.15625}
       - {x: 0.26875, y: 0.25625}
+--- !u!114 &2294587933221593838
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8037127898186569117}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 85bd16981aa5ed143bd529039c24b26c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  animationDuration: 2

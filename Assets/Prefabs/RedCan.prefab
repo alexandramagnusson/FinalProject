@@ -10,8 +10,8 @@ GameObject:
   m_Component:
   - component: {fileID: 8308116755067383976}
   - component: {fileID: 5382184399394684974}
-  - component: {fileID: 6114469058312015856}
   - component: {fileID: 2798903228308415294}
+  - component: {fileID: 1341664171369617111}
   m_Layer: 0
   m_Name: RedCan
   m_TagString: Untagged
@@ -86,19 +86,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &6114469058312015856
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4849781728253037956}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ac8c526d32d07d045878843348c12f6e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  animationDuration: 2
 --- !u!60 &2798903228308415294
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -133,3 +120,16 @@ PolygonCollider2D:
       - {x: 0.3, y: -0.16875}
       - {x: 0.3, y: 0.18125}
       - {x: 0.275, y: 0.25625}
+--- !u!114 &1341664171369617111
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4849781728253037956}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 85bd16981aa5ed143bd529039c24b26c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  animationDuration: 2

@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6259063285799755686}
-  - component: {fileID: 6323281457554608310}
+  - component: {fileID: 147701124026223901}
   m_Layer: 0
   m_Name: FireSpawner
   m_TagString: Untagged
@@ -27,11 +27,12 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &6323281457554608310
+--- !u!114 &147701124026223901
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -40,13 +41,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 1726507438677487190}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1bd750182f151164498d451536c0d365, type: 3}
+  m_Script: {fileID: 11500000, guid: 50f6f646da111ef4cb2613b3b8507e32, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  firePrefab: {fileID: 1538892202368937162, guid: 6eca3681621215544989757df8b87a33, type: 3}
-  spawnPoints:
-  - {x: -3.5, y: -3.5}
-  - {x: 4, y: 4}
-  - {x: 4, y: -4}
-  - {x: -4, y: 4}
-  spawnInterval: 4
+  firePrefab: {fileID: 0}
+  spawnPoints: []
+  spawnInterval: 5
+  totalFires: 0
