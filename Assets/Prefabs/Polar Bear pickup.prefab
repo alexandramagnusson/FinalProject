@@ -197,6 +197,10 @@ PrefabInstance:
       propertyPath: groundLayers.m_Bits
       value: 2817
       objectReference: {fileID: 0}
+    - target: {fileID: 6854453054960079602, guid: 5216d4a3ef5914b23b206e4b6944a206, type: 3}
+      propertyPath: m_SortingOrder
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8032194942204259350, guid: 5216d4a3ef5914b23b206e4b6944a206, type: 3}
       propertyPath: m_Points.m_Paths.Array.data[0].Array.size
       value: 7
