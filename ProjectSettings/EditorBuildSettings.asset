@@ -9,6 +9,15 @@ EditorBuildSettings:
     path: Assets/Scenes/Start Scene.unity
     guid: 3c322e74ca1c10a43b9a5a5eec7aba18
   - enabled: 1
+    path: Assets/Scenes/Clicker.unity
+    guid: b605199076ba34b4d9b1190077ee27ef
+  - enabled: 1
     path: Assets/Scenes/Alexandra.unity
     guid: 2cda990e2423bbf4892e6590ba056729
+  - enabled: 1
+    path: Assets/Scenes/Ronald.unity
+    guid: 3c4de534475dc4739816c8f3ead7e699
+  - enabled: 1
+    path: Assets/Scenes/Mackenzie.unity
+    guid: 1a018028afd3a4e63a3191f4f1973763
   m_configObjects: {}
