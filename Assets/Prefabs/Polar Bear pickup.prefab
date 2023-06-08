@@ -180,7 +180,7 @@ PrefabInstance:
     - target: {fileID: 4808512472932641710, guid: 5216d4a3ef5914b23b206e4b6944a206, type: 3}
       propertyPath: coinsound
       value: 
-      objectReference: {fileID: 8300000, guid: ecc98bc90e4cd407d9f48716d40f85d4, type: 3}
+      objectReference: {fileID: 8300000, guid: 9d38eb65efdea4df8a5aa4a39c38fd9c, type: 3}
     - target: {fileID: 4808512472932641710, guid: 5216d4a3ef5914b23b206e4b6944a206, type: 3}
       propertyPath: jumpforce
       value: 8
