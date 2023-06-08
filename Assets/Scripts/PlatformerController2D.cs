@@ -56,7 +56,7 @@ public class PlatformerController2D : Controller2D
             if(impactDirection.y > 0.0f) {
                 TakeDamage();
             }
-            audioSource.PlayOneShot(killsound);
+            AudioSource.PlayClipAtPoint(killsound, transform.position);
             Vector2 vel = rb2d.velocity;
             vel.y = jumpforce;
             rb2d.velocity = vel;
@@ -68,7 +68,7 @@ public class PlatformerController2D : Controller2D
         if (invulnerable) {
             return;
         }
-        audioSource.PlayOneShot(hitsound);
+        AudioSource.PlayClipAtPoint(hitsound, transform.position);
         lives--;
         HeartsUI.RemoveHeart();
         if(lives <= 0) {
@@ -89,7 +89,7 @@ public class PlatformerController2D : Controller2D
 
     public void CollectCoin()
     {
-        audioSource.PlayOneShot(coinsound);
+        AudioSource.PlayClipAtPoint(coinsound, transform.position);
     }
 
     IEnumerator Invulnerability(float time)
