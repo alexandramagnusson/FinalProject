@@ -10,23 +10,22 @@ public class SliderController : MonoBehaviour
 {
     // Start is called before the first frame update
     public TMP_Text valueText;
-    int temp = 0;
+    int temp = 10;
     public Slider slider; 
 
-    public void onSliderChanged(float value)
-    {
-        valueText.text = value.ToString();
-    }
-
-    public void updateTemp()
+    public void AddTemp()
     {
         temp++; 
         slider.value = temp;
+        valueText.text = temp.ToString();
+        Debug.Log("AddTemp");
     }
 
-    public void removeTemp()
+    public void RemoveTemp()
     {
         temp--;
+        Debug.Log("RemoveTemp");
         slider.value = temp;
+        valueText.text = temp.ToString();
     }
 }
