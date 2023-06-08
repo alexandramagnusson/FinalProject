@@ -1,11 +1,22 @@
 using UnityEngine;
 using TMPro; // Required for dealing with TextMeshPro
 using System.Collections;
+using UnityEngine.SceneManagement;
 
 public class Countdown : MonoBehaviour
 {
     public float timeLeft = 60.0f; // Time to countdown from
     public TextMeshProUGUI countdownText; // TextMeshProUGUI component to display the countdown
+
+    public string nextLevel = "";
+
+    private void Start()
+    {
+        if (nextLevel == "")
+        {
+            nextLevel = SceneManager.GetActiveScene().name;
+        }
+    }
 
     void Update()
     {
@@ -22,6 +33,8 @@ public class Countdown : MonoBehaviour
         if (timeLeft <= 0)
         {
             // Handle time running out, such as ending the game
+            SceneManager.LoadScene(nextLevel);
+
         }
     }
 }

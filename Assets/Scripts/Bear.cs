@@ -22,18 +22,39 @@ public class Bear : MonoBehaviour
     private Rigidbody2D rb;
     private Vector2 moveDirection;
 
+    // Reference to the NPCController
+    private NPCController npcController;
+
+    // Declare npcControllers as an array of NPCController
+    private NPCController[] npcControllers;
+
     // Start is called before the first frame update
     void Start()
     {
         //rb = GetComponent<Rigidbody2D>();
         GetComponent<Rigidbody2D>().constraints = RigidbodyConstraints2D.FreezeRotation;
         rb = GetComponent<Rigidbody2D>();
+
+                // Find all NPCs and get their NPCController scripts
+                GameObject[] npcs = GameObject.FindGameObjectsWithTag("NPC");
+                if (npcs.Length > 0)
+                {
+                    npcControllers = new NPCController[npcs.Length];
+                    for (int i = 0; i < npcs.Length; i++)
+                    {
+                        npcControllers[i] = npcs[i].GetComponent<NPCController>();
+                    }
+                }
     }
 
     // Update is called once per frame
     void Update()
     {
         ProcessInputs();
+
+        // Update the statistics in our Singleton
+        GameStatistics.instance.UpdateStatistics(extinguishedFires, cansCollected);
+
     }
 
     public int getLives()
@@ -119,6 +140,18 @@ void Move()
             // Handle player death here
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex); // reloads the current scene
         }
+
+//    void SwitchScene()
+//    {
+//        PlayerPrefs.SetInt("FiresExtinguished", extinguishedFires);
+//        PlayerPrefs.SetInt("TotalFires", FireSpawner.totalFires); // Assuming totalFires is a static variable in the FireSpawner class
+//        PlayerPrefs.SetInt("CansCollected", cansCollected);
+//        PlayerPrefs.SetInt("TotalCans", NPCController.totalCans); // Assuming totalCans is a static variable in the NPCController class
+//
+//        // Switch to the other scene, replace "OtherSceneName" with your scene name
+//        SceneManager.LoadScene("OtherSceneName");
+//    }
+
 
 }
 

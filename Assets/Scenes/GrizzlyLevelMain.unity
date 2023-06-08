@@ -413,8 +413,25 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 62e368a6f784972429cd19b8ea7c47e3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  timeLeft: 60
+  timeLeft: 30
   countdownText: {fileID: 1207459342}
+  nextLevel: GrizzlyEndScreen
+--- !u!114 &342322353
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 342322346}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 44e4e18aa4a6b3d46bac1a46031d1398, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fireSpawner: {fileID: 1397418457}
+  npcControllers:
+  - {fileID: 1644114856}
+  - {fileID: 878001558}
 --- !u!1 &731805698
 GameObject:
   m_ObjectHideFlags: 0
@@ -1086,6 +1103,17 @@ MonoBehaviour:
   - {x: -3, y: -3}
   spawnInterval: 5
   totalFires: 0
+--- !u!114 &1397418457 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 147701124026223901, guid: 61239570ed255774889e1aa2b54e9148, type: 3}
+  m_PrefabInstance: {fileID: 1397418454}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1397418455}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 50f6f646da111ef4cb2613b3b8507e32, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1403926587
 GameObject:
   m_ObjectHideFlags: 0
