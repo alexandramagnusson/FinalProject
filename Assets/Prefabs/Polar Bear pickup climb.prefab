@@ -7,6 +7,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1039029045188472112, guid: 7a536337a8527f94d8089d7284158849, type: 3}
+      propertyPath: m_SortingOrder
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1427627114182890604, guid: 7a536337a8527f94d8089d7284158849, type: 3}
       propertyPath: climbsound
       value: 
