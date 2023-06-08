@@ -40,7 +40,7 @@ public class PlatformerController2D : Controller2D
 
         bool inputJump = Input.GetKeyDown(KeyCode.Space);
         if (inputJump && grounded) {
-            audioSource.PlayOneShot(jumpsound);
+            AudioSource.PlayClipAtPoint(jumpsound, transform.position);
             vel.y = jumpforce;
             //Debug.Log("jump");
             relativeVelocity.y = vel.y;

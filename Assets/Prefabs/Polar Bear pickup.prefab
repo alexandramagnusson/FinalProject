@@ -163,7 +163,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4322438761876849630, guid: 5216d4a3ef5914b23b206e4b6944a206, type: 3}
       propertyPath: m_Name
-      value: Polar Bear_32 x 32px_0
+      value: Polar Bear pickup
       objectReference: {fileID: 0}
     - target: {fileID: 4322438761876849630, guid: 5216d4a3ef5914b23b206e4b6944a206, type: 3}
       propertyPath: m_Layer
@@ -176,11 +176,11 @@ PrefabInstance:
     - target: {fileID: 4808512472932641710, guid: 5216d4a3ef5914b23b206e4b6944a206, type: 3}
       propertyPath: hitsound
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 8300000, guid: 9b68469373bbe45feba455444039086e, type: 3}
     - target: {fileID: 4808512472932641710, guid: 5216d4a3ef5914b23b206e4b6944a206, type: 3}
       propertyPath: coinsound
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 8300000, guid: ecc98bc90e4cd407d9f48716d40f85d4, type: 3}
     - target: {fileID: 4808512472932641710, guid: 5216d4a3ef5914b23b206e4b6944a206, type: 3}
       propertyPath: jumpforce
       value: 8
@@ -188,11 +188,11 @@ PrefabInstance:
     - target: {fileID: 4808512472932641710, guid: 5216d4a3ef5914b23b206e4b6944a206, type: 3}
       propertyPath: jumpsound
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 8300000, guid: bead7c119606b4be9a8b134009bc8e9b, type: 3}
     - target: {fileID: 4808512472932641710, guid: 5216d4a3ef5914b23b206e4b6944a206, type: 3}
       propertyPath: killsound
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 8300000, guid: 207a722007f4a4acb9a6f7810ea44387, type: 3}
     - target: {fileID: 4808512472932641710, guid: 5216d4a3ef5914b23b206e4b6944a206, type: 3}
       propertyPath: groundLayers.m_Bits
       value: 2817
