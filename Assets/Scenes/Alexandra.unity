@@ -2909,7 +2909,7 @@ Transform:
   m_Children:
   - {fileID: 148837142}
   m_Father: {fileID: 0}
-  m_RootOrder: 40
+  m_RootOrder: 41
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1326469629
 PrefabInstance:
@@ -3913,6 +3913,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 537312460524119108, guid: dbf468c9e6686401f9bf341c3b19e206, type: 3}
+      propertyPath: climbAnimation.Array.size
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 5237783405878639060, guid: dbf468c9e6686401f9bf341c3b19e206, type: 3}
       propertyPath: m_Name
       value: Polar Bear_32 x 32px_0
@@ -3972,7 +3976,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 6761098378549560755, guid: 388ce93fd9c494b5bb66256c7617fe64, type: 3}
       propertyPath: m_RootOrder
-      value: 41
+      value: 40
       objectReference: {fileID: 0}
     - target: {fileID: 6761098378549560755, guid: 388ce93fd9c494b5bb66256c7617fe64, type: 3}
       propertyPath: m_LocalPosition.x

@@ -8,7 +8,7 @@ public class PlayerClimb : MonoBehaviour
     private float vertical;
     private float speed = 5f;
     private bool isTree;
-    private bool isClimbing;
+    public bool isClimbing;
 
     [SerializeField] private Rigidbody2D rb;
 
