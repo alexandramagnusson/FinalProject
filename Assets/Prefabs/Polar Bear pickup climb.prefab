@@ -7,9 +7,25 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1427627114182890604, guid: 7a536337a8527f94d8089d7284158849, type: 3}
+      propertyPath: climbsound
+      value: 
+      objectReference: {fileID: 8300000, guid: 97dd4dce1cda94b2eb7dc7783294994e, type: 3}
+    - target: {fileID: 2687635663046517132, guid: 7a536337a8527f94d8089d7284158849, type: 3}
+      propertyPath: climbAnimation.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2687635663046517132, guid: 7a536337a8527f94d8089d7284158849, type: 3}
+      propertyPath: climbAnimation.Array.data[0]
+      value: 
+      objectReference: {fileID: -1112775467, guid: dace8af4e24f8304cba11df9cacc758a, type: 3}
+    - target: {fileID: 2687635663046517132, guid: 7a536337a8527f94d8089d7284158849, type: 3}
+      propertyPath: climbAnimation.Array.data[1]
+      value: 
+      objectReference: {fileID: 1600128485, guid: dace8af4e24f8304cba11df9cacc758a, type: 3}
     - target: {fileID: 7676619704570854428, guid: 7a536337a8527f94d8089d7284158849, type: 3}
       propertyPath: m_Name
-      value: Polar Bear_32 x 32px_0
+      value: Polar Bear pickup climb
       objectReference: {fileID: 0}
     - target: {fileID: 8203848679356594678, guid: 7a536337a8527f94d8089d7284158849, type: 3}
       propertyPath: m_RootOrder
@@ -74,6 +90,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 897f0e23ccdd64163b4d41bd68add019, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isClimbing: 0
   rb: {fileID: 5271119027191981692}
 --- !u!50 &5271119027191981692 stripped
 Rigidbody2D:
