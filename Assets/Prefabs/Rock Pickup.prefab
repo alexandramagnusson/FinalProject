@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 8276976681818923017}
   - component: {fileID: 8276976681818923020}
   - component: {fileID: 6903973973939659518}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Rock Pickup
   m_TagString: PickupObject
   m_Icon: {fileID: 0}
@@ -128,7 +128,7 @@ Rigidbody2D:
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
-  m_Mass: 0.0001
+  m_Mass: 1
   m_LinearDrag: 0
   m_AngularDrag: 0
   m_GravityScale: 1
