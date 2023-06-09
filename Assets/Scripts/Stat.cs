@@ -17,7 +17,7 @@ public class Stat : MonoBehaviour
         yield return new WaitForSeconds(0.1f); // Delay the display of stats
 
         int extinguishedFires = GameStatistics.instance.firesStat;
-        int totalFires = 10;
+        int totalFires = 5;
         int cansCollectedDisplay = GameStatistics.instance.cansCollectedDisplay;
         int totalCans = GameStatistics.instance.totalCans;
 
