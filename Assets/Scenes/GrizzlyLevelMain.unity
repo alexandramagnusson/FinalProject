@@ -362,7 +362,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3550469322963345707, guid: f96e1b60a1a270348913de17b388af3b, type: 3}
       propertyPath: m_TagString
-      value: Untagged
+      value: NPC
       objectReference: {fileID: 0}
     - target: {fileID: 6845035006228792256, guid: f96e1b60a1a270348913de17b388af3b, type: 3}
       propertyPath: m_SortingLayer
@@ -416,22 +416,6 @@ MonoBehaviour:
   timeLeft: 30
   countdownText: {fileID: 1207459342}
   nextLevel: GrizzlyEndScreen
---- !u!114 &342322353
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 342322346}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 44e4e18aa4a6b3d46bac1a46031d1398, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  fireSpawner: {fileID: 1397418457}
-  npcControllers:
-  - {fileID: 1644114856}
-  - {fileID: 878001558}
 --- !u!1 &731805698
 GameObject:
   m_ObjectHideFlags: 0
@@ -490,6 +474,54 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 89.516}
+--- !u!1 &793363842
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 793363844}
+  - component: {fileID: 793363843}
+  m_Layer: 0
+  m_Name: stats
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &793363843
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 793363842}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 44e4e18aa4a6b3d46bac1a46031d1398, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fireSpawner: {fileID: 147701124026223901, guid: 61239570ed255774889e1aa2b54e9148, type: 3}
+  npcControllers:
+  - {fileID: 878001558}
+  - {fileID: 1644114856}
+--- !u!4 &793363844
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 793363842}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -5.281555, y: 2.3279254, z: 1.8133502}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 22
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &867500717
 GameObject:
   m_ObjectHideFlags: 0
@@ -634,7 +666,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5795896840027253106, guid: 1d2091cdb1727af40ba3b9a2c6f6bd50, type: 3}
       propertyPath: m_TagString
-      value: Untagged
+      value: NPC
       objectReference: {fileID: 0}
     - target: {fileID: 8261374417527970478, guid: 1d2091cdb1727af40ba3b9a2c6f6bd50, type: 3}
       propertyPath: m_RootOrder
@@ -1077,6 +1109,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 6323281457554608310, guid: 61239570ed255774889e1aa2b54e9148, type: 3}
+    - {fileID: 147701124026223901, guid: 61239570ed255774889e1aa2b54e9148, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 61239570ed255774889e1aa2b54e9148, type: 3}
 --- !u!1 &1397418455 stripped
 GameObject:
@@ -1103,17 +1136,6 @@ MonoBehaviour:
   - {x: -3, y: -3}
   spawnInterval: 5
   totalFires: 0
---- !u!114 &1397418457 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 147701124026223901, guid: 61239570ed255774889e1aa2b54e9148, type: 3}
-  m_PrefabInstance: {fileID: 1397418454}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1397418455}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 50f6f646da111ef4cb2613b3b8507e32, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1403926587
 GameObject:
   m_ObjectHideFlags: 0
@@ -2215,3 +2237,7 @@ MonoBehaviour:
   lives: 5
   invulnerabilityTime: 2
   moveSpeed: 5
+  fireSpawner: {fileID: 0}
+  npcControllersInScene:
+  - {fileID: 1644114856}
+  - {fileID: 878001558}

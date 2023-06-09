@@ -13,12 +13,21 @@ public class HeartsUI : MonoBehaviour
 
     void Awake()
     {
+
         instance = this; // Set the instance to this HeartsUI component
     }
 
     public static void SetLives(int lives)
     {
-        instance._SetLives(lives); // Call the _SetLives method on the instance
+        // Call the _SetLives method on the instance
+        if (instance != null) // Check if instance is not null
+        {
+            instance._SetLives(lives);
+        }
+        else
+        {
+            Debug.LogError("HeartsUI instance is null");
+        }
     }
 
     public static void RemoveHeart()

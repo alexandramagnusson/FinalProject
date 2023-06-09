@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using TMPro;
+using System.Linq;
 
 public class Bear : MonoBehaviour
 {
@@ -26,7 +27,11 @@ public class Bear : MonoBehaviour
     private NPCController npcController;
 
     // Declare npcControllers as an array of NPCController
-    private NPCController[] npcControllers;
+    private NPCController[] npcControllersArray;
+
+    //updates for stats
+    public FireSpawner fireSpawner;
+    public List<NPCController> npcControllersInScene;
 
     // Start is called before the first frame update
     void Start()
@@ -35,16 +40,25 @@ public class Bear : MonoBehaviour
         GetComponent<Rigidbody2D>().constraints = RigidbodyConstraints2D.FreezeRotation;
         rb = GetComponent<Rigidbody2D>();
 
-                // Find all NPCs and get their NPCController scripts
-                GameObject[] npcs = GameObject.FindGameObjectsWithTag("NPC");
-                if (npcs.Length > 0)
+        // Find all NPCs and get their NPCController scripts
+        GameObject[] npcs = GameObject.FindGameObjectsWithTag("NPC");
+        if (npcs.Length > 0)
+        {
+            // Clear the list in GameStatistics instance in case it already contains data
+            GameStatistics.instance.npcControllers.Clear();
+
+            for (int i = 0; i < npcs.Length; i++)
+            {
+                NPCController controller = npcs[i].GetComponent<NPCController>();
+                if (controller != null)
                 {
-                    npcControllers = new NPCController[npcs.Length];
-                    for (int i = 0; i < npcs.Length; i++)
-                    {
-                        npcControllers[i] = npcs[i].GetComponent<NPCController>();
-                    }
+                    GameStatistics.instance.npcControllers.Add(controller);
                 }
+            }
+        }
+
+        // Assign fireSpawner to GameStatistics
+        GameStatistics.instance.fireSpawner = fireSpawner;
     }
 
     // Update is called once per frame
@@ -105,7 +119,7 @@ void Move()
     else if (collision.gameObject.CompareTag("Can")) // If collided with a Can
     {
         cansCollected++; // Increment cansCollected
-
+        GameStatistics.instance.IncreaseCansCollected();
     }
     else if (collision.gameObject.CompareTag("Fire") && water) // If collided with a Fire and water is true
     {
@@ -140,18 +154,6 @@ void Move()
             // Handle player death here
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex); // reloads the current scene
         }
-
-//    void SwitchScene()
-//    {
-//        PlayerPrefs.SetInt("FiresExtinguished", extinguishedFires);
-//        PlayerPrefs.SetInt("TotalFires", FireSpawner.totalFires); // Assuming totalFires is a static variable in the FireSpawner class
-//        PlayerPrefs.SetInt("CansCollected", cansCollected);
-//        PlayerPrefs.SetInt("TotalCans", NPCController.totalCans); // Assuming totalCans is a static variable in the NPCController class
-//
-//        // Switch to the other scene, replace "OtherSceneName" with your scene name
-//        SceneManager.LoadScene("OtherSceneName");
-//    }
-
 
 }
 

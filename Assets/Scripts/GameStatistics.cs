@@ -14,7 +14,8 @@ public class GameStatistics : MonoBehaviour
     public int totalFires => fireSpawner.totalFires; // Total fires is now pulled from the FireSpawner
     public int cansCollected { get; private set; }
     public int totalCans { get; private set; }
-
+    public int cansCollectedDisplay;
+    public int firesStat;
     private void Awake()
     {
         if (instance == null)
@@ -24,7 +25,10 @@ public class GameStatistics : MonoBehaviour
         }
         else
         {
-            Destroy(gameObject);
+            if (instance != this)
+            {
+                Destroy(gameObject); // Destroys the new object that was created on scene load
+            }
         }
     }
 
@@ -42,6 +46,16 @@ public class GameStatistics : MonoBehaviour
         cansCollected = cansColl;
         this.totalCans = totalCans;
     }
+    public void IncreaseCansCollected()
+    {
+        cansCollectedDisplay++;
+    }
+    public void IncreaseFires()
+    {
+        firesStat++;
+    }
 }
+
+
 
 

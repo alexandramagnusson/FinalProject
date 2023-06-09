@@ -9,14 +9,21 @@ public class Stat : MonoBehaviour
 
     void Start()
     {
-        int extinguishedFires = GameStatistics.instance.extinguishedFires;
-        int totalFires = GameStatistics.instance.totalFires;
-        int cansCollected = GameStatistics.instance.cansCollected;
+        StartCoroutine(DisplayStats());
+    }
+
+    private IEnumerator DisplayStats()
+    {
+        yield return new WaitForSeconds(0.1f); // Delay the display of stats
+
+        int extinguishedFires = GameStatistics.instance.firesStat;
+        int totalFires = 10;
+        int cansCollectedDisplay = GameStatistics.instance.cansCollectedDisplay;
         int totalCans = GameStatistics.instance.totalCans;
 
         statisticsText.text = $"Fires Extinguished: {extinguishedFires}\n" +
                               $"Total Fires: {totalFires}\n" +
-                              $"Cans Collected: {cansCollected}\n" +
+                              $"Cans Collected: {cansCollectedDisplay}\n" +
                               $"Total Cans: {totalCans}";
     }
 }

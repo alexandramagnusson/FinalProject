@@ -9,6 +9,8 @@ TagManager:
   - PickupObject
   - Tree
   - NPC
+  - Can
+  - Fire
   layers:
   - Default
   - TransparentFX

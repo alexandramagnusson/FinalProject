@@ -11,6 +11,7 @@ public class Fire : MonoBehaviour
             Bear bear = collision.gameObject.GetComponent<Bear>();
             if (bear != null && bear.water)
             {
+                GameStatistics.instance.IncreaseFires();
                 Destroy(gameObject); // Destroy the fire object
             }
         }

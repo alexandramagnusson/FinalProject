@@ -16,6 +16,7 @@ public class Can : MonoBehaviour
     {
         Bear player = other.gameObject.GetComponent<Bear>();
         if (player != null) {
+            GameStatistics.instance.IncreaseCansCollected();
             StartCoroutine(CollectAnimation());
             Destroy(GetComponent<Collider2D>());
         }
