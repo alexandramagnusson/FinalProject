@@ -22,7 +22,6 @@ public class Stat : MonoBehaviour
         int totalCans = GameStatistics.instance.totalCans;
 
         statisticsText.text = $"Fires Extinguished: {extinguishedFires}\n" +
-                              $"Total Fires: {totalFires}\n" +
                               $"Cans Collected: {cansCollectedDisplay}\n" +
                               $"Total Cans: {totalCans}";
     }
