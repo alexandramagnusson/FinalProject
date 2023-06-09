@@ -176,7 +176,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1b6e148a996e3694cb45125db07e5e52, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nextLevelName: griz
+  nextLevelName: Grizzly Tutorial
 --- !u!114 &161057898
 MonoBehaviour:
   m_ObjectHideFlags: 0
