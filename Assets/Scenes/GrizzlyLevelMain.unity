@@ -507,6 +507,8 @@ MonoBehaviour:
   npcControllers:
   - {fileID: 878001558}
   - {fileID: 1644114856}
+  cansCollectedDisplay: 0
+  firesStat: 0
 --- !u!4 &793363844
 Transform:
   m_ObjectHideFlags: 0
@@ -1131,7 +1133,7 @@ MonoBehaviour:
   firePrefab: {fileID: 1538892202368937162, guid: 6eca3681621215544989757df8b87a33, type: 3}
   spawnPoints:
   - {x: 4, y: 4}
-  - {x: 4, y: -4}
+  - {x: 3.8, y: -3.8}
   - {x: -4, y: 4}
   - {x: -3, y: -3}
   spawnInterval: 5
